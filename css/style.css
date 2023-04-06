@@ -53,14 +53,23 @@ section {
     padding: 130px 0;
 }
 
-.text-button {
-    width: 214px;
-    height: 50px;
+.text-button, .price-button {
     font-size: 1.111rem;
     font-weight: 500;
     border-radius: 50px;
     border: 3px solid black;
     background-color: var(--button-color);
+}
+
+.text-button {
+    width: 214px;
+    height: 50px;
+}
+
+.price-button {
+    width: 244px;
+    height: 41px;
+    font-family: 'Roboto';
 }
 
 /* Header */
@@ -139,22 +148,28 @@ section {
     flex-wrap: wrap;
 }
 
+.product-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu-card {
     width: 336px;
     height: 647px;
     background-image: url('../img/Papyrus.png');
+}
+
+.product-content {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
 .menu-content {
     width: 270px;
     height: 471px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .menu-description {
@@ -171,4 +186,27 @@ section {
     margin: 0 auto;
     width: 468px;
     justify-content: space-between;
+}
+
+/* Мерч */
+.merch .container p {
+    font-size: 1.333rem;
+    font-weight: 500;
+    margin: 50px 0 28px 0;
+}
+
+.merch-all-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.merch-card {
+    width: 321px;
+    height: 483px;
+    background-image: url('../img/Papyrus2.png');
+}
+
+.merch-content {
+    width: 244px;
+    height: 365px;
 }
