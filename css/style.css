@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&family=Roboto:wght@500&display=swap');
+
+/* Стили для всей страницы */
+:root {
+    font-size: 18px;
+    /* Backgrounds */
+    --page-bg-color: #FBD6AF;
+    --header-bg-color: #D2B48C;
+    --container-bg-color: #E9C8A6;
+    --footer-bg-color: #5A3D21;
+    /* Elements */
+    --button-color: #F7C287;
+}
+
+* {
+    font-family: 'Alegreya';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 3.556rem;
+}
+
+h2 {
+    font-size: 2.222rem;
+}
+
+.container {
+    width: 1020px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Header */
+.header-container {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: var(--header-bg-color);
+    opacity: 0.8;
+}
+
+.header-container .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    z-index: 2;
+}
+
+.header-links {
+    display: flex;
+    list-style: none;
+    width: 677px;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+/*
+.opasity{
+    background-color: var(--header-bg-color);
+    width: 100vw;
+    height: 70px;
+    opacity: 0.8;
+    position: fixed;
+}
+*/
+/* Приветствующий экран */
+.greeting {
+    background-image: url('../img/cafe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.greeting .container {
+    width: 100vw;
+    height: 100vh;
+    max-height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.greeting .container h1 {
+    color: white;
+    margin-bottom: 38px;
+}
+
+.greeting .container p {
+    color: white;
+    font-size: 1.778rem;
+}
