@@ -257,6 +257,63 @@ button {
     margin: 50px 0;
 }
 
+.reservation-content {
+    display: flex;
+    justify-content: space-between;
+    height: 551px;
+}
+
+.reservation-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 551px;
+}
+
+.reservation-form-input {
+    height: 45px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: none;
+    padding: 11px 17px;
+    font-size: 1rem;
+}
+
+#input-phone, .input-guests, .input-date, .input-time {
+    font-family: 'Roboto';
+}
+
+.input-guests {
+    text-align: center;
+    width: 90px;
+    height: 45px;
+}
+
+.form-table {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.reservation-datetime {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+}
+
+.input-date {
+    width: 160px;
+}
+
+.input-time {
+    width: 120px;
+}
+
+.input-wishes {
+    height: 76px;
+}
+
 .reservation-map {
     width: 629px;
     height: 551px;
