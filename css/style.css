@@ -47,6 +47,12 @@ h4 {
     font-size: 1.111rem;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
 .text-under-h2 {
     font-size: 1.333rem;
     font-weight: 500;
@@ -114,10 +120,8 @@ button {
     font-weight: 500;
 }
 
-.header-links a {
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
+.header-links a:hover {
+    color: var(--page-bg-color);
 }
 
 /* Приветствующий экран */
@@ -324,4 +328,60 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Подвал */
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 45px;
+    background-color: var(--footer-bg-color);
+}
+
+.footer-container .container {
+    height: 168px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container p,
+.footer-container a {
+    color: var(--page-bg-color);
+}
+
+.footer-container a:hover {
+    color: black;
+}
+
+.number-and-email,
+.footer-first-column,
+.second-column-right-side,
+.footer-third-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-second-column {
+    display: flex;
+    width: 195px;
+    justify-content: center;
+}
+
+.second-column-left-side {
+    display: flex;
+    align-items: center;
+}
+
+.second-column-social-networks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-and-email {
+    font-size: 1.3333rem;
+    height: 90px;
+}
+
+.number-and-email p:first-child {
+    font-family: 'Roboto';
 }
