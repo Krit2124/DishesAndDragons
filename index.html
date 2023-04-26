@@ -12,19 +12,19 @@
 <body>
     <header class="header-container">
         <div class="container">
-            <img src="img/logo.png" alt="logotype">
+            <a href=""><img src="img/logo.png" alt="logotype"></a>
             <ul class="header-links">
                 <li>
-                    <a href="#">Меню</a>
+                    <a href="#menu">Меню</a>
                 </li>
                 <li>
-                    <a href="#">Мерч</a>
+                    <a href="#merch">Мерч</a>
                 </li>
                 <li>
-                    <a href="#">Частые вопросы</a>
+                    <a href="#questions">Частые вопросы</a>
                 </li>
                 <li>
-                    <a href="#">Бронирование столика</a>
+                    <a href="#reservation">Бронирование столика</a>
                 </li>
             </ul>
             <button class="burger" onclick="toggleMenu()">
@@ -43,7 +43,7 @@
             </div>
         </section>
 
-        <section class="menu">
+        <section class="menu" id="menu">
             <div class="container">
                 <h2>Меню</h2>
                 
@@ -110,7 +110,7 @@
             </div>
         </section>
 
-        <section class="merch">
+        <section class="merch" id="merch">
             <div class="container">
                 <h2>Игровые компоненты</h2>
                 <p class="text-under-h2">У нас вы можете купить или арендовать фирменные игровые компоненты, распечатать карты местности для ваших игр и многое другое</p>
@@ -147,7 +147,7 @@
             </div>
         </section>
 
-        <section class="questions">
+        <section class="questions" id="questions">
             <div class="container">
                 <h2>Часто задаваемые вопросы</h2>
                 <div class="questions-list">
@@ -211,7 +211,7 @@
             </div>
         </section>
 
-        <section class="reservation">
+        <section class="reservation" id="reservation">
             <div class="container">
                 <h2>Бронирование столика</h2>
                 <p class="text-under-h2">Выберите кафе, чтобы увидеть точный адрес и время работы</p>
@@ -232,11 +232,6 @@
                                 <h3>Кол-во гостей:</h3>
                                 <input class="reservation-form-input input-guests" type="number" min="1">
                             </div>
-    
-                            <!-- <div class="rereservation-form form-table">
-                                <input id="input-table"  class="reservation-form-input" type="checkbox">
-                                <label for="input-table"></label>
-                            </div> -->
 
                             <div class="reservation-datetime">
                                 <div class="reservation-form form-date">
