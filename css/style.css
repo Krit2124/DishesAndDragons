@@ -368,22 +368,18 @@ button.burger.open .line.line-3 {
 .reservation-map {
     display: flex;
     align-items: center;
-}
-
-.map {
+    justify-content: center;
     width: 629px;
     height: 551px;
     padding-left: 3px;
     background-image: url('../img/papyrusForMap.png');
     background-repeat: no-repeat;
     background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.map-adaptived {
-    display: none;
+.map {
+    width: 83%;
+    height: 70%;
 }
 
 /* Подвал */
@@ -453,9 +449,9 @@ button.burger.open .line.line-3 {
         max-width: 75%;
     }
 
-    .map {
-        max-width: 40vw;
-        max-height: 35.04vw;
+    .reservation-map {
+        width: 39vw;
+        height: 35vw;
     }
 
     .footer-container .container {
@@ -497,16 +493,17 @@ button.burger.open .line.line-3 {
         height: 100%;
     }
 
-    .map {
-        display: none;
-    }
-
-    .map-adaptived {
+    .reservation-map {
         display: flex;
         background: none;
         width: 100%;
         height: 30vw;
         margin-bottom: 50px;
+    }
+
+    .map {
+        width: 100%;
+        height: 100%;
     }
 
     .reservation-form form {
